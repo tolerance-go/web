@@ -33,7 +33,7 @@ Some knowledge points and small applications of web3
 
 ## 文章
 
-- [How Ethereum Layer 2 scaling solutions address barriers to enterprises building on Mainnet](https://tolerance-go.github.io/web3/articles/how-ethereum-layer-2-scaling-solutions-address-barriers-to-enterprises-building-on-mainnet)
+- [How Ethereum Layer 2 scaling solutions address barriers to enterprises building on Mainnet 以太坊第 2 层扩展解决方案如何解决企业在主网上构建的障碍](https://tolerance-go.github.io/web3/articles/how-ethereum-layer-2-scaling-solutions-address-barriers-to-enterprises-building-on-mainnet)
 
 ---
 
