@@ -31,6 +31,10 @@ Some knowledge points and small applications of web3
 
 - DAG（Directed Acyclic Graph）是有向无环图
 
+## 文章
+
+- [How Ethereum Layer 2 scaling solutions address barriers to enterprises building on Mainnet](https://tolerance-go.github.io/web3/articles/how-ethereum-layer-2-scaling-solutions-address-barriers-to-enterprises-building-on-mainnet)
+
 ---
 
 建议安装[此插件](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode)，在 vscode 中查看 maps/articles 中内容
