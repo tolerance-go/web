@@ -33,4 +33,4 @@ Some knowledge points and small applications of web3
 
 ---
 
-建议安装[此插件](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode)，在 vscode 中查看 maps 中内容
+建议安装[此插件](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode)，在 vscode 中查看 maps/articles 中内容
