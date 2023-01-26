@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How Ethereum Layer 2 scaling solutions address barriers to enterprises
+      building on Mainnet
+    </title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  </head>
+  <body>
+    <section id="content" style="width: 100%">
+      <article
+        id="post-2884"
+        class="prose lg:prose-xl post post-2884 type-post status-publish format-standard has-post-thumbnail hentry category-blog"
+      >
+        <a
+          href="https://entethalliance.org/how-ethereum-layer-2-scaling-solutions-address-barriers-to-enterprises-building-on-mainnet/"
+          >原文链接</a
+        >
+        <div class="fusion-post-title-meta-wrap">
+          <h2 class="entry-title fusion-post-title">
+            How Ethereum Layer 2 scaling solutions address barriers to
+            enterprises building on Mainnet
+          </h2>
+          <blockquote class="bg-white text-xs">
+            <h2 class="entry-title fusion-post-title">
+              以太坊第 2 层扩展解决方案如何解决企业在主网上构建的障碍
+            </h2>
+          </blockquote>
+        </div>
+        <div class="post-content">
+          <div
+            class="fusion-fullwidth fullwidth-box fusion-builder-row-1 nonhundred-percent-fullwidth non-hundred-percent-height-scrolling"
+          >
+            <div class="fusion-builder-row fusion-row">
+              <div
+                class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last"
+                style="margin-top: 0px; margin-bottom: 0px"
+              >
+                <div
+                  class="fusion-column-wrapper fusion-flex-column-wrapper-legacy"
+                >
+                  <div class="fusion-text fusion-text-1">
+                    <p><em>Tas Dienes, EEA Mainnet Working Group</em></p>
+                    <blockquote class="bg-white text-xs">
+                      <p><em>Tas Dienes，EEA 主网工作组</em></p>
+                    </blockquote>
+                    <p><em>December 2020</em></p>
+                    <blockquote class="bg-white text-xs">
+                      <p><em>2020 年 12 月</em></p>
+                    </blockquote>
+                    <p>
+                      If you’ve been following the buzz in the Ethereum
+                      ecosystem recently, you’ve probably heard about high
+                      transaction fees and the limited processing capacity of
+                      Mainnet.&nbsp; You may also have heard about Layer
+                      2.&nbsp; Layer 2 is a set of technologies or systems that
+                      run on top of Ethereum (Layer 1), inherit security
+                      properties from Layer 1, and provide greater transaction
+                      processing capacity (throughput), lower transaction fees
+                      (operating cost), and faster transaction confirmations
+                      than Layer 1. Layer 2 scaling solutions are secured by
+                      Layer 1, but they enable blockchain applications to handle
+                      many more users or actions or data than Layer 1 could
+                      accommodate.
+                    </p>
+                    <blockquote class="bg-white text-xs">
+                      <p>
+                        如果你最近一直在关注以太坊生态系统的动态，你可能听说过高交易费和主网处理能力有限的问题。您可能还听说过
+                        Layer 2。Layer 2 是运行在以太坊（Layer
+                        1）之上的一组技术或系统，继承了 Layer 1
+                        的安全属性，提供更大的交易处理能力（吞吐量）、更低的交易费用（运营成本），以及比第
+                        1 层更快的交易确认。第 2 层扩展解决方案由第 1
+                        层保护，但它们使区块链应用程序能够处理比第 1
+                        层可以容纳的更多的用户或操作或数据。
+                      </p>
+                    </blockquote>
+                    <p>
+                      Layer 2 is a broad field in which many teams are
+                      researching and building different scaling solutions that
+                      are sometimes competitive and sometimes complementary. The
+                      major categories of L2 solutions are: state channels, side
+                      chains<sup>1</sup>, plasma, optimistic rollups,
+                      zk-rollups, and validium. There are also some hybrid
+                      solutions that have properties of multiple
+                      categories.&nbsp; Each has its own set of strengths,
+                      weaknesses, and tradeoffs. Diving into how each type of L2
+                      technology works and the nuances of its tradeoffs is
+                      beyond the scope of this article, but many others have
+                      written about them.<sup>4,5,6,7</sup>
+                    </p>
+                    <blockquote class="bg-white text-xs">
+                      <p>
+                        Layer 2
+                        是一个广阔的领域，许多团队正在研究和构建不同的扩展解决方案，这些解决方案有时相互竞争，有时又相互补充。
+                        L2
+                        解决方案的主要类别是：状态通道、侧链1、Plasma、optimistic
+                        rollups、zk-rollups 和
+                        validium。还有一些混合解决方案具有多个类别的属性。每个都有自己的优势、劣势和权衡。深入探讨每种
+                        L2
+                        技术的工作原理及其权衡的细微差别超出了本文的范围，但许多其他人已经写过关于它们的文章。
+                        4,5,6,7
+                      </p>
+                    </blockquote>
+                    <p>
+                      Most L2 solutions are centered around a server or cluster
+                      of servers, each of which may be referred to as a node,
+                      validator, operator, sequencer, block producer, or similar
+                      term.&nbsp; Depending on the implementation, these L2
+                      nodes may be run by the businesses or entities that use
+                      them, or by a 3rd party operator, or by a large group of
+                      individuals (similar to Mainnet).&nbsp; Generally
+                      speaking, transactions are submitted to these L2 nodes
+                      instead of being submitted directly to L1; the L2 instance
+                      then batches them into groups before anchoring them to L1,
+                      after which they are secured by L1 and cannot be
+                      altered.&nbsp; The details of how this is done vary
+                      significantly between different L2 technologies and
+                      implementations.
+                    </p>
+                    <blockquote class="bg-white text-xs">
+                      <p>
+                        大多数 L2 解决方案都以服务器或
+                        服务器集群，每个服务器都可以称为
+                        一个节点，验证器，操作员，排序器，区块生产者，
+                        或类似术语。根据实施情况， 这些 L2
+                        节点可能由企业或实体运行
+                        使用它们的人，或由第三方运营商，或由大型
+                        一群人（类似于主网）。 一般来说，交易都是提交给这些
+                        L2节点而不是直接提交给L1；这 L2 实例然后将它们分批成组
+                        将它们锚定到 L1，之后它们被 L1 固定
+                        且不可更改。&nbsp;详情这是怎么回事 done 在不同的 L2
+                        之间差异很大 技术和实施。
+                      </p>
+                    </blockquote>
+                    <h2>Private vs Public Ethereum</h2>
+                    <blockquote class="bg-white text-xs">
+                      <h2>私人与公共以太坊</h2>
+                    </blockquote>
+                    <p>
+                      Many businesses have been building applications on or
+                      experimenting with private blockchains, including private
+                      Enterprise Ethereum implementations, despite the fact that
+                      Ethereum Mainnet’s open and decentralized nature provides
+                      certain advantages such as stronger security/immutability,
+                      transparency, lower operating cost,<sup>3</sup> and the
+                      ability to interoperate with all of the other applications
+                      that are also on the Mainnet (network effects).&nbsp;
+                      Sharing a common frame of reference avoids the unnecessary
+                      creation of numerous isolated silos which cannot
+                      communicate and share or synchronize information with each
+                      other.
+                    </p>
+                    <blockquote class="bg-white text-xs">
+                      <p>
+                        许多企业一直在私有区块链上构建应用程序或试验私有区块链，包括私有企业以太坊实施，尽管事实上以太坊主网的开放和去中心化性质提供了某些优势，例如更强的安全性/不变性、透明度、更低的运营成本，3
+                        以及能够与也在主网上的所有其他应用程序进行互操作（网络效应）。共享一个共同的参考框架避免了不必要地创建许多无法相互通信和共享或同步信息的孤立孤岛。
+                      </p>
+                    </blockquote>
+                    <p>
+                      These benefits are also available on L2, if desired
+                      (transparency is optional).&nbsp; Transactions on L2 are
+                      umpired and secured by L1, which still acts as a common
+                      frame of reference and ensures globally consistent
+                      transaction ordering and state management. Applications
+                      can interoperate easily within an L2 instance, and can
+                      transact across L2s via cross-chain messaging.
+                    </p>
+                    <blockquote class="bg-white text-xs">
+                      <p>
+                        如果需要，这些好处也可在 L2 上获得（透明度是可选的）。
+                        L2 上的交易由 L1 进行仲裁和保护，L1
+                        仍然充当通用参考框架，并确保全球一致的交易排序和状态管理。应用程序可以在
+                        L2 实例中轻松地进行互操作，并且可以通过跨链消息传递跨 L2
+                        进行交易。
+                      </p>
+                    </blockquote>
+                    <p>
+                      There are numerous reasons why enterprise developers and
+                      architects have chosen to build on private chains instead
+                      of public ones.&nbsp; In late 2019, John Wolpert of
+                      ConsenSys wrote a list of issues with the idea of using
+                      the Ethereum Mainnet in business.<sup>2</sup>&nbsp; Here
+                      we will take an expanded version of that list of issues or
+                      objections to building on Mainnet, and look at how Layer 2
+                      scaling solutions can change the game for some
+                      applications.
+                    </p>
+                    <blockquote class="bg-white text-xs">
+                      <p>
+                        企业开发人员和架构师选择在私有链而不是公共链上构建的原因有很多。
+                        2019 年底，ConsenSys 的 John Wolpert
+                        写了一份关于在商业中使用以太坊主网的想法的问题列表。2
+                        在这里，我们将采用该问题列表的扩展版本或对在主网上构建的反对意见，并看看第
+                        2 层如何扩展解决方案可以改变某些应用程序的游戏规则。
+                      </p>
+                    </blockquote>
+                  </div>
+                  <div class="table-2">
+                    <table width="100%">
+                      <thead>
+                        <tr>
+                          <th align="left">
+                            <strong
+                              >Problems with Building on the Ethereum
+                              Mainnet</strong
+                            >
+                            <blockquote class="bg-white text-xs">
+                              <strong>在以太坊主网上构建的问题</strong>
+                            </blockquote>
+                          </th>
+                          <th align="left">
+                            <strong>Impacts of Using a Layer 2 Solution</strong>
+                            <blockquote class="bg-white text-xs">
+                              <strong>使用第 2 层解决方案的影响</strong>
+                            </blockquote>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td align="left">
+                            Scaling Problem: My application requires hundreds or
+                            thousands of transactions per second, which public
+                            chains can’t handle
+                            <blockquote class="bg-white text-xs">
+                              扩展问题：我的应用程序每秒需要数百或数千笔交易，这是公共链无法处理的
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            <p>
+                              This is exactly the problem L2 solutions are
+                              designed to address.&nbsp; Depending on the
+                              specific L2 technology and implementation, it may
+                              offer from 50x to over 1000x more throughput than
+                              L1.
+                            </p>
+                            <blockquote class="bg-white text-xs">
+                              <p>
+                                这正是 L2 解决方案旨在解决的问题。根据特定的 L2
+                                技术和实施，它可能提供比 L1 高 50 倍到 1000
+                                倍以上的吞吐量。
+                              </p>
+                            </blockquote>
+                            <p>
+                              On the high end: state channels, plasma, validium,
+                              side chains, and certain hybrid solutions.&nbsp;
+                              On the lower end:&nbsp; zk-rollups and optimistic
+                              rollups.
+                            </p>
+                            <blockquote class="bg-white text-xs">
+                              <p>
+                                高端：状态通道、plasma、validium、侧链和某些混合解决方案。在低端：zk-rollups
+                                和 optimistic rollups。
+                              </p>
+                            </blockquote>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Speed and Latency Problem: Our CRM and ERP systems
+                            don’t need the kind of Transaction Per Second speeds
+                            of a Visa or Mastercard (and even they get those TPS
+                            rates through parallelization…can’t fool me). But
+                            long wait times for round-trip + consensus makes
+                            things I might do with the Mainnet a bad user
+                            experience.
+                            <blockquote class="bg-white text-xs">
+                              速度和延迟问题：我们的 CRM 和 ERP 系统不需要 Visa
+                              或万事达卡那种每秒交易速度（即使它们通过并行化获得那些
+                              TPS
+                              率……也骗不了我）。但是往返+共识的漫长等待时间让我可能用主网做的事情成为糟糕的用户体验。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            <p>
+                              Some L2 solutions can provide “instant”
+                              transaction confirmations with an economic
+                              guarantee that your transaction will be included
+                              in the next L2 block.
+                            </p>
+                            <blockquote class="bg-white text-xs">
+                              <p>
+                                一些 L2 解决方案可以提供“即时”交易
+                                确认您的经济担保 交易将包含在下一个 L2 块中。
+                              </p>
+                            </blockquote>
+                            <p>
+                              Sidechains can also offer shorter block times and
+                              faster finality within the sidechain (though the
+                              transactions are not anchored to L1).
+                            </p>
+                            <blockquote class="bg-white text-xs">
+                              <p>
+                                侧链还可以在侧链内提供更短的出块时间和更快的最终确定性（尽管交易没有锚定到
+                                L1）。
+                              </p>
+                            </blockquote>
+                            <p>
+                              Finalizing L2 transactions on L1, to get the full
+                              benefits of L1 security, still depends on L1 block
+                              time. Whether you need to wait for L1 finality, L1
+                              confirmation, or only for L2 confirmation will
+                              depend on the specifics of your application.
+                            </p>
+                            <blockquote class="bg-white text-xs">
+                              <p>
+                                在 L1 上完成 L2 交易，以获得 L1
+                                安全的全部好处，仍然取决于 L1
+                                出块时间。是否需要等待L1 最终确定性、L1
+                                确认或仅针对 L2 确认将取决于具体情况 你的申请。
+                              </p>
+                            </blockquote>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Finality Problem: Ethereum is an “eventual
+                            consistency” machine. If that’s changing with
+                            Eth2.0, I don’t understand it…something about a
+                            magical fast finality something. I dunno. What I do
+                            know is that all my systems are ones where a change
+                            to data is final the second it’s written.
+                            <blockquote class="bg-white text-xs">
+                              终结性问题：以太坊是一个“最终的
+                              一致性”机器。如果这正在改变
+                              Eth2.0，我看不懂……关于一个
+                              神奇的快速终结性的东西。我不知道。我所做的
+                              我知道我所有的系统都发生了变化
+                              数据在写入的那一刻是最终的。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            L2 may make this a bit more complicated, because
+                            transactions may need to be finalized on both L2 and
+                            L1.&nbsp; At a minimum it’s the same level of
+                            complexity as L1.
+                            <blockquote class="bg-white text-xs">
+                              L2 可能会使这更复杂一些，因为交易可能需要同时在 L2
+                              和 L1 上完成。至少它的复杂程度与 L1 相同。
+                            </blockquote>
+                            <p>
+                              However, Ethereum 2.0 introduces finality via its
+                              new consensus algorithm, Casper FFG.&nbsp; After
+                              migration to Eth2, both L1 and L2 transactions can
+                              be considered finalized after some period of time.
+                            </p>
+                            <blockquote class="bg-white text-xs">
+                              <p>
+                                然而，以太坊 2.0 通过其新的共识算法 Casper FFG
+                                引入了终结性。迁移到 Eth2 后，L1 和 L2
+                                交易都可以在一段时间后被视为已完成。
+                              </p>
+                            </blockquote>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Noisy Neighbor Problem: Other users and network
+                            activity must not disrupt my operations. As an
+                            enterprise conducting mission-critical operations
+                            that rely on predictable operation timing, I need to
+                            be comfortable that a “cryptokitty” event isn’t a
+                            possibility. I need to know that, even though the
+                            Mainnet is a public utility, there is reasonable
+                            assurance by some means that the reads, writes and
+                            computations I need to conduct business on the
+                            Mainnet will not be reduced to a crawl by the
+                            activities of others.
+                            <blockquote class="bg-white text-xs">
+                              吵闹的邻居问题：其他用户和网络活动不得干扰我的操作。作为一家执行依赖可预测操作时间的关键任务操作的企业，我需要放心，“cryptokitty”事件是不可能发生的。我需要知道，即使主网是公共设施，也可以通过某种方式合理保证我在主网上开展业务所需的读取、写入和计算不会因其他人的活动而减少。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            The degree to which “noisy neighbors” can disrupt
+                            your operations by consuming most of the L1 capacity
+                            depends on the type of L2 technology and how it is
+                            implemented.&nbsp; Some technologies such as plasma
+                            and validium write very little data to L1.&nbsp;
+                            Because of this, the L2 operator can pay higher gas
+                            prices if needed to ensure that their transactions
+                            are processed on L1 in a timely manner.&nbsp; These
+                            solutions are very resistant to “noisy neighbors”.
+                            <blockquote class="bg-white text-xs">
+                              “吵闹的邻居”的扰乱程度 通过消耗大部分 L1
+                              容量来进行操作 取决于 L2 技术的类型及其方式
+                              实施。等离子等一些技术 而 validium 向 L1
+                              写入的数据非常少。&nbsp; 正因为如此，L2
+                              运营商可以支付更高的 gas
+                              如果需要价格以确保他们的交易 在 L1
+                              上得到及时处理。&nbsp;这些
+                              解决方案对“吵闹的邻居”非常有抵抗力。
+                            </blockquote>
+                            <p>
+                              Sidechains are also relatively immune to this
+                              problem because they do not depend on the L1
+                              chain. But transferring tokens or data to/from the
+                              L1 chain is still subject to the capacity of L1.
+                              <blockquote class="bg-white text-xs">
+                                侧链对此也相对免疫
+                              问题，因为它们不依赖于 L1
+                              链。但是将令牌或数据传输到/从
+                              L1 链仍然受制于 L1 的容量。
+                              </blockquote>
+                            </p>
+                            <p>
+                              Rollup style L2 solutions are constrained by the
+                              available capacity of L1, and can suffer more from
+                              Mainnet congestion.&nbsp; The L1 gas cost to
+                              anchor these L2 transactions on L1 is still much
+                              lower than the cost to make these transactions
+                              directly on L1, so the operator may be able to pay
+                              higher transaction fees in order to ensure timely
+                              processing.&nbsp; These solutions are less
+                              resistant to noisy neighbors than the previously
+                              mentioned ones, but more resistant than
+                              applications running directly on L1.
+                              <blockquote class="bg-white text-xs">
+                                Rollup 风格的 L2 解决方案受限于
+                                L1的可用容量，并且可以遭受更多
+                                主网拥堵。&nbsp; L1 的 gas 成本为
+                                将这些 L2 交易锚定在 L1 上仍然很多
+                                低于进行这些交易的成本
+                                直接在 L1 上，因此运营商可以支付
+                                更高的交易费用，以确保及时
+                                处理。这些解决方案较少
+                                比以前更能抵抗吵闹的邻居
+                                提到的，但比
+                                直接在 L1 上运行的应用程序。
+                              </blockquote>
+                            </p>
+                            <p>
+                              If enterprise applications are sharing an L2
+                              instance with other applications, depending on the
+                              implementation, the L2 operator may be able to
+                              provide some amount of guaranteed throughput or an
+                              SLA with respect to that L2 instance.&nbsp; An
+                              application or company may also have its own L2
+                              instance all to itself.
+                              <blockquote class="bg-white text-xs">
+                                如果企业应用程序与其他应用程序共享一个 L2 实例，根据实施情况，L2 运营商可能能够提供一定数量的保证吞吐量或与该 L2 实例相关的 SLA。应用程序或公司也可能拥有自己的 L2 实例。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Private Data Problem: Eighty percent of our data is
+                            considered sensitive, internal or personally
+                            identifiable client, customer or user data.
+                            Encryption isn’t enough. Any data can be
+                            deanonymized and decrypted given time. And anyone
+                            with a full node has forever to crunch the bits on
+                            the ledger. So I don’t like putting even encrypted
+                            data on a public chain.
+                            <blockquote class="bg-white text-xs">
+                                私人数据问题：我们 80% 的数据被认为是敏感的、内部的或个人可识别的客户、客户或用户数据。加密是不够的。任何数据都可以在给定时间进行去匿名化和解密。任何拥有完整节点的人都必须永远处理账本上的数据。所以我不喜欢把加密数据放在公链上。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            Certain L2 technologies (such as validium, side
+                            chains, and Arbitrum SCSC) are able to keep all L2
+                            data within the L2 instance and off of L1.
+                            <blockquote class="bg-white text-xs">
+                                某些 L2 技术（例如 validium、侧链和 Arbitrum SCSC）能够将所有 L2 数据保存在 L2 实例中并脱离 L1。
+                            </blockquote>
+                            <p>
+                              If multiple companies are writing data to the same
+                              shared L2 instance, they will be able to see each
+                              other’s data (like a consortium), but if a company
+                              has its own instance then the data can be kept
+                              private.
+                              <blockquote class="bg-white text-xs">
+                                如果多家公司将数据写入同一个共享的 L2 实例，他们将能够看到彼此的数据（就像一个联盟），但如果一家公司有自己的实例，那么数据可以保密。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Security Issues: Encrypted data is still data. It is
+                            against our policy to store PII and client data,
+                            even encrypted, on peer to peer platforms.
+                            <blockquote class="bg-white text-xs">
+                                安全问题：加密数据仍然是数据。在点对点平台上存储 PII 和客户数据（即使是加密的）违反了我们的政策。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            While rollups write all transaction data to L1,
+                            other solutions do not.&nbsp; Some L2 solutions
+                            enable a company to run their own private L2
+                            instance which keeps all L2 data to itself, on
+                            servers controlled by that company.
+                            <blockquote class="bg-white text-xs">
+                                汇总将所有交易数据写入 L1，而其他解决方案则不会。一些 L2 解决方案使公司能够在该公司控制的服务器上运行他们自己的私有 L2 实例，该实例将所有 L2 数据保留给自己。
+                            </blockquote>
+                            <p>
+                              Ultimately, the need to place sensitive data on a
+                              blockchain should be questioned, as there are
+                              design patterns which avoid using blockchains as
+                              databases and focus on leveraging their strengths,
+                              while keeping sensitive data off-chain.
+                              <blockquote class="bg-white text-xs">
+                                最终，将敏感数据放在区块链上的必要性应该受到质疑，因为有些设计模式避免将区块链用作数据库并专注于利用其优势，同时将敏感数据保持在链下。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Data Locality Problem: GDPR requires that I can
+                            account for where PII data is stored, even when it
+                            is encrypted. And I need to be able to delete that
+                            data permanently upon request. If the data is
+                            sitting permanently on any number of nodes not
+                            controlled by me everywhere…yeah.
+                            <blockquote class="bg-white text-xs">
+                                数据局部性问题：GDPR 要求我可以说明 PII 数据的存储位置，即使它是加密的。我需要能够根据要求永久删除该数据。如果数据永久保存在不受我控制的任意数量的节点上……是的。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            With certain L2 solutions that do not write
+                            transaction data to L1, an L2 operator can provide a
+                            GDPR compliant L2 service which stores L2 data in a
+                            known location with the required level of
+                            security.&nbsp; Or a company can run its own private
+                            L2 instance and have complete control over the L2
+                            data.
+                            <blockquote class="bg-white text-xs">
+                                使用某些不将交易数据写入 L1 的 L2 解决方案，L2 运营商可以提供符合 GDPR 的 L2 服务，该服务将 L2 数据存储在已知位置，并具有所需的安全级别。或者公司可以运行自己的私有 L2 实例并完全控制 L2 数据。
+                            </blockquote>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Responsible Party Problem: My legal structure
+                            requires that there be a responsible party handling
+                            all aspects of my data and business logic. If I put
+                            data on the Mainnet, I lose a key responsible party.
+                            <blockquote class="bg-white text-xs">
+                                责任方问题：我的法律结构要求有责任方处理我的数据和业务逻辑的所有方面。如果我把数据放在主网上，我就失去了一个关键的责任方。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            Some L2 solutions are run by an operator, who can
+                            offer and be held accountable for SLAs and security
+                            in traditional fashion.
+                            <blockquote class="bg-white text-xs">
+                                一些 L2 解决方案由运营商运营，他们可以以传统方式提供 SLA 和安全性并对其负责。
+                            </blockquote>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Transaction Cost Problem: Ethereum gas prices have
+                            been going up. If I need to conduct millions of
+                            transactions, it’s going to be insanely expensive.
+                            <blockquote class="bg-white text-xs">
+                                交易成本问题：以太坊Gas 价格一直在上涨。如果我需要进行数百万笔交易，那将是非常昂贵的。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            This is another problem that L2 was specifically
+                            designed to address.&nbsp; Because anchoring L2
+                            transactions on L1 consumes much less gas than
+                            conducting the transactions directly on L1, L2
+                            transaction cost is much lower.
+                            <blockquote class="bg-white text-xs">
+                                这是 L2 专门设计用于解决的另一个问题。因为在 L1 上锚定 L2 交易消耗的 gas 比直接在 L1 上进行交易要少得多，所以 L2 交易成本要低得多。
+                            </blockquote>
+                            <p></p>
+                            <p>
+                              The exact savings depends on the L2
+                              technology.&nbsp; L2s like state channels, plasma
+                              validium, and sidechains are the most economical,
+                              while L2s that store transaction data on L1, like
+                              rollups, offer less (but still substantial)
+                              savings.
+                              <blockquote class="bg-white text-xs">
+                                确切的节省取决于 L2 技术。像状态通道、Plasma validium 和侧链这样的 L2 是最经济的，而在 L1 上存储交易数据的 L2，比如 rollups，提供较少（但仍然可观）的节省。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Cost Unpredictability Problem: Gas prices go up and
+                            down. Crypto prices go up and down. It’s too hard to
+                            forecast how much my transactions will cost.
+                            <blockquote class="bg-white text-xs">
+                                成本不可预测性问题：Gas 价格上下波动。加密货币价格上下波动。很难预测我的交易成本是多少。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            With certain L2 implementations, there is an
+                            operator who may charge a fixed/guaranteed price per
+                            transaction.
+                            <blockquote class="bg-white text-xs">
+                                对于某些 L2 实施，运营商可以对每笔交易收取固定/保证价格。
+                            </blockquote>
+                            <p></p>
+                            <p>
+                              Sidechain operators may offer flat rate pricing
+                              for variable durations of chain operation (3mo,
+                              6mo, 12mo). Transactions within the chain would
+                              largely be gasless.
+                              <blockquote class="bg-white text-xs">
+                                侧链运营商可以为链运营的可变持续时间（3 个月、6 个月、12 个月）提供固定费率定价。链内的交易在很大程度上是无气体的。
+                              </blockquote>
+                            </p>
+                            <p>
+                              Even under variable market-based pricing, L2
+                              greatly reduces cost per transaction.&nbsp;
+                              Depending on the type of L2, L2 transaction costs
+                              may vary linearly as gas prices on L1 vary
+                              (rollups), or may be relatively decoupled because
+                              less data is stored on L1 (validium, plasma,
+                              etc.).&nbsp; Given lower overall cost, the
+                              implications of variability may be reduced.
+                              <blockquote class="bg-white text-xs">
+                                即使在可变的基于市场的定价下，L2 也大大降低了每笔交易的成本。根据 L2 的类型，L2 交易成本可能会随着 L1 上的 gas 价格变化（汇总）而线性变化，或者可能会相对解耦，因为 L1 上存储的数据较少（validium、plasma 等）。鉴于较低的总成本，可变性的影响可能会减少。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Crypto Payment Problem: I have to hold crypto and
+                            pay for transactions in crypto.&nbsp; Getting my
+                            company’s treasury comfortable with buying and
+                            holding and paying in crypto is a nightmare.
+                            <blockquote class="bg-white text-xs">
+                                加密货币支付问题：我必须持有加密货币并用加密货币支付交易费用。让我公司的财务部门对购买、持有和支付加密货币感到满意是一场噩梦。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            If the L2 instance is run by a 3rd party operator,
+                            the operator may accept payment for L2 transactions
+                            in any form of currency they choose, including
+                            traditional fiat.
+                            <blockquote class="bg-white text-xs">
+                                如果 L2 实例由第三方运营商运行，运营商可以接受以他们选择的任何形式的货币支付 L2 交易，包括传统法定货币。
+                            </blockquote>
+                            <p></p>
+                            <p>
+                              This problem may also be addressed on L1 by
+                              transaction relayers (aka gas stations) who can
+                              accept payment in fiat or tokens and relay
+                              transactions to the L1 network.
+                              <blockquote class="bg-white text-xs">
+                                这个问题也可以通过交易中继器（又名加油站）在 L1 上解决，他们可以接受法定或代币支付并将交易中继到 L1 网络。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Strategy Leaks Problem: Transaction metadata can be
+                            used to game the system or collect / analyze for
+                            strategic counterintelligence or corp. espionage. In
+                            the age of AI, any trace activity done on a
+                            permanent, public ledger can be used to figure out
+                            who is doing what, even if it’s just little changes
+                            to Merkle tries.
+                            <blockquote class="bg-white text-xs">
+                                战略泄漏问题：交易元数据可用于对系统进行游戏或收集/分析战略反情报或公司。间谍。在 AI 时代，任何在永久性公共分类账上进行的跟踪活动都可以用来查明谁在做什么，即使这只是对 Merkle 尝试的微小改动。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            L2s based on certain technologies (such as validium,
+                            side chains, Arbitrum SCSC) are able to keep L2
+                            transaction details contained within the L2 and off
+                            of L1.&nbsp; The L2 can then restrict access to
+                            authorized entities. If a company runs its own
+                            private L2 instance then the details of their
+                            transactions can be kept private (though there may
+                            be limited use cases for L2s that are used by only
+                            one entity).
+                            <blockquote class="bg-white text-xs">
+                                基于某些技术（例如 validium、侧链、Arbitrum SCSC）的 L2 能够将 L2 交易详细信息包含在 L2 中并脱离 L1。 L2 然后可以限制对授权实体的访问。如果一家公司运行自己的私有 L2 实例，那么他们的交易细节可以保密（尽管 L2 的用例可能有限，仅由一个实体使用）。
+                            </blockquote>
+                            <p></p>
+                            <p>
+                              It is also possible to use an approach like
+                              Baseline, wherein transactions between entities
+                              are conducted privately, and only ZK proofs of
+                              correctness (gathered in batches) are submitted to
+                              either L1 or L2.
+                              <blockquote class="bg-white text-xs">
+                                也可以使用像 Baseline 这样的方法，其中实体之间的交易是私下进行的，并且只有 ZK 正确性证明（分批收集）被提交给 L1 或 L2。
+                              </blockquote>
+                            </p>
+                            <p>
+                              An emerging technology called zkzk-rollup (e.g.
+                              Aztec 2.0) allows confidential transactions within
+                              the L2 so that others on the same L2 instance
+                              cannot decipher your transactions.
+                              <blockquote class="bg-white text-xs">
+                                一种称为 zkzk-rollup（例如 Aztec 2.0）的新兴技术允许在 L2 内进行机密交易，以便同一 L2 实例上的其他人无法破译您的交易。
+                              </blockquote>
+                            </p>
+                            <p>
+                              Also under development are data privacy and
+                              custody protocols which rely on access rights
+                              management, distributed key generation, and
+                              trusted execution environments so as to keep data
+                              private except for while inside a TEE within the
+                              Layer 2.
+                              <blockquote class="bg-white text-xs">
+                                同样在开发中的还有数据隐私和托管协议，它们依赖于访问权限管理、分布式密钥生成和可信执行环境，以保持数据的私密性，除了在第 2 层内的 TEE 内。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Confidential Code Problem: You can’t just hide the
+                            data with something like ZK-SNARKS and think that
+                            everything is ok from a corporate perspective. Many
+                            business agreements are embodied in code… business
+                            logic. If a machine can execute a smart contract, it
+                            can decompile and look at the logic, and that can
+                            leak sensitive info.
+                            <blockquote class="bg-white text-xs">
+                                机密代码问题：你不能只是用 ZK-SNARKS 之类的东西隐藏数据，并认为从公司的角度来看一切都很好。许多业务协议都体现在代码中……业务逻辑。如果一台机器可以执行智能合约，它可以反编译并查看逻辑，这可能会泄露敏感信息。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            Some L2s don’t support smart contracts and execution
+                            of code.
+                            <blockquote class="bg-white text-xs">
+                                一些 L2 不支持智能合约和代码执行。
+                            </blockquote>
+                            <p></p>
+                            <p>
+                              If your transactions require code execution, it
+                              may be possible to use an approach like Baseline,
+                              wherein transactions between entities are
+                              conducted privately, and only ZK proofs of
+                              correctness are submitted to either L1 or L2.
+                              <blockquote class="bg-white text-xs">
+                                如果您的交易需要代码执行，可以使用像 Baseline 这样的方法，其中实体之间的交易是私下进行的，并且只有 ZK 正确性证明被提交给 L1 或 L2。
+                              </blockquote>
+                            </p>
+                            <p>
+                              An emerging technology called zkzk-rollup (e.g.
+                              Aztec 2.0) allows confidential transactions within
+                              the L2 so that others on the same L2 instance
+                              cannot decipher your transactions.
+                              <blockquote class="bg-white text-xs">
+                                一种称为 zkzk-rollup（例如 Aztec 2.0）的新兴技术允许在 L2 内进行机密交易，以便同一 L2 实例上的其他人无法破译您的交易。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left">
+                            Emotional: Bitcoin and Ethereum are for
+                            non-regulated/off book uses (i.e. criminal
+                            activity). I don’t want to be associated with that,
+                            and I’m afraid of what might happen if governments
+                            cracked down on public blockchains.
+                            <blockquote class="bg-white text-xs">
+                                情感：比特币和以太坊用于不受监管/账外用途（即犯罪活动）。我不想与此相关联，我担心如果政府打击公共区块链可能会发生什么。
+                            </blockquote>
+                          </td>
+                          <td align="left">
+                            As public use of Ethereum grows, it becomes more
+                            difficult for any one government to censor or block
+                            the network. While there may be global efforts to
+                            remove or reduce use by criminal actors, it is
+                            unlikely to forestall the growth of decentralized
+                            computing and public networks. The advantages of
+                            shared protocols, digital currency/tokens, trustless
+                            and automated contract execution, along with other
+                            Web3 benefits are too powerful to stop.
+                            <blockquote class="bg-white text-xs">
+                                随着以太坊公众使用的增长，任何一国政府审查或封锁网络都变得更加困难。虽然全球可能会努力消除或减少犯罪分子的使用，但它不太可能阻止去中心化计算和公共网络的发展。共享协议、数字货币/代币、去信任和自动化合同执行的优势，以及其他 Web3 的优势，强大到无法阻挡。
+                            </blockquote>
+                            <p></p>
+                            <p>
+                              Running your applications on L2 can provide a
+                              degree of isolation from the public L1
+                              blockchain.&nbsp; The L2 may be operated more like
+                              traditional business IT infrastructure with
+                              security and accountability, and act as a buffer
+                              between your business and unregulated activity,
+                              but still has L1 as an umpire, plus the benefits
+                              of immutability, interoperability, and the common
+                              frame of reference that L1 provides.
+                              <blockquote class="bg-white text-xs">
+                                在 L2 上运行您的应用程序可以提供与公共 L1 区块链的一定程度的隔离。 L2 的运行方式可能更像具有安全性和问责制的传统业务 IT 基础设施，并充当您的业务和不受监管的活动之间的缓冲区，但仍然有 L1 作为裁判，加上不变性、互操作性和通用参考框架的好处L1 提供的。
+                              </blockquote>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="fusion-text fusion-text-2">
+                    <h2>Conclusion</h2>
+                    <blockquote class="bg-white text-xs">
+                      <h2>结论</h2>
+                    </blockquote>
+                    <p>
+                      Layer 2 scaling solutions for Ethereum Mainnet have been
+                      under development for the last few years, and are now
+                      becoming ready to take on real applications.&nbsp;
+                      Building your application on a Layer 2 will help you
+                      achieve much higher throughput than running all your
+                      operations directly on Layer 1. And it will minimize
+                      transaction costs. Layer 2 can also help solve problems
+                      related to privacy, confidentiality of transactions, and
+                      data custodianship.&nbsp; And it can help avoid the need
+                      for businesses to deal with cryptocurrency tokens and
+                      price volatility when paying for transactions.
+                      <blockquote class="bg-white text-xs">
+                        以太坊主网的第 2 层扩展解决方案在过去几年一直在开发中，现在已准备好接受实际应用。在第 2 层上构建您的应用程序将帮助您实现比直接在第 1 层上运行所有操作更高的吞吐量。它将最大限度地降低交易成本。第 2 层还可以帮助解决与隐私、交易机密性和数据保管相关的问题。它可以帮助避免企业在支付交易时需要处理加密货币代币和价格波动。
+                      </blockquote>
+                    </p>
+                    <p>
+                      There are many L2 solutions, each with its own strengths
+                      and weaknesses and tradeoffs.&nbsp; It is advisable to
+                      think carefully about your application’s requirements and
+                      to study the available options before making a selection.
+                      <blockquote class="bg-white text-xs">
+                        有许多 L2 解决方案，每个都有自己的优缺点和权衡。建议在做出选择之前仔细考虑您的应用程序要求并研究可用选项。
+                      </blockquote>
+                    </p>
+                    <p>
+                      Examples of L2 solutions that are production ready or will
+                      be soon include:
+                      <blockquote class="bg-white text-xs">
+                        已准备好或即将投入生产的 L2 解决方案示例包括：
+                      </blockquote>
+                    </p>
+                    <ul>
+                      <li>
+                        Optimistic rollups (data on chain, fraud proofs)
+                        <blockquote class="bg-white text-xs">
+                            乐观汇总（链上数据、欺诈证明）
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://optimism.io/"
+                              >Optimism
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://offchainlabs.com/"
+                              >Offchain Labs Arbitrum Rollup</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://fuel.sh/"
+                              >Fuel Network</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        ZK rollups (data on chain, ZK validity proofs)
+                        <blockquote class="bg-white text-xs">
+                            ZK rollups（链上数据，ZK有效性证明）
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://loopring.org/%23/"
+                              >Loopring
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://starkware.co/"
+                              >Starkware</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://matter-labs.io/"
+                              >Matter Labs zkSync</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://aztec.network/"
+                              >Aztec 2.0</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Validium (data off chain, ZK validity proofs)
+                        <blockquote class="bg-white text-xs">
+                            Validium（链下数据，ZK有效性证明）
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://starkware.co/"
+                              >Starkware</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://matter-labs.io/"
+                              >Matter Labs zkPorter</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Plasma (data off chain, fraud proofs)
+                        <blockquote class="bg-white text-xs">
+                            Plasma（链下数据、欺诈证明）
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://omg.network/"
+                              >OMG Network</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://gzle.io/"
+                              >Gazelle</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://matic.network/"
+                              >Matic Network</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://ipfs.leapdao.org/"
+                              >LeapDAO</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        State channels
+                        <blockquote class="bg-white text-xs">
+                            状态通道
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://connext.network/"
+                              >Connext</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://raiden.network/"
+                              >Raiden</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://perun.network/"
+                              >Perun</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Sidechains<sup>1</sup>
+                        <blockquote class="bg-white text-xs">
+                            侧链
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://skale.network/"
+                              >Skale</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://www.poa.network/"
+                              >POA Network</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Hybrid solutions
+                        <blockquote class="bg-white text-xs">
+                            混合解决方案
+                        </blockquote>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://offchainlabs.com/arbitrum.pdf"
+                              >Offchain Labs Arbitrum SCSC</a
+                            >
+                            – has properties of both sidechains and state
+                            channels, but falls back to optimistic rollup if
+                            validators misbehave.
+                            <blockquote class="bg-white text-xs">
+                                Offchain Labs Arbitrum SCSC – 具有侧链和状态通道的属性，但如果验证者行为不当，则会回退到乐观汇总。
+                            </blockquote>
+                          </li>
+                          <li>
+                            <a
+                              href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://www.celer.network/"
+                              >Celer</a
+                            >
+                            – has tunable properties of sidechains and state
+                            channels and optimistic rollups
+                            <blockquote class="bg-white text-xs">
+                                Celer – 具有侧链和状态通道以及乐观汇总的可调属性
+                            </blockquote>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <h2>Notes and references</h2>
+                    <blockquote class="bg-white text-xs">
+                      <h2>注释和参考</h2>
+                    </blockquote>
+                    <ol>
+                      <li>
+                        Some people would say that sidechains are technically
+                        not layer 2, because they are not secured by L1:
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://ethresear.ch/t/understanding-sidechains/8045"
+                          >https://ethresear.ch/t/understanding-sidechains/8045</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://drive.google.com/file/d/1-_lHgLeIyYH2ggtKigvNhzHz7OnXFJz6/view"
+                          >https://drive.google.com/file/d/1-_lHgLeIyYH2ggtKigvNhzHz7OnXFJz6/view</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://github.com/EYBlockchain/fundamental-cost-of-ownership/blob/master/EY%2520Total%2520Cost%2520of%2520Ownership%2520for%2520Blockchain%2520Solutions.pdf"
+                          >https://github.com/EYBlockchain/fundamental-cost-of-ownership/blob/master/EY%20Total%20Cost%20of%20Ownership%20for%20Blockchain%20Solutions.pdf</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two"
+                          >https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://medium.com/matter-labs/evaluating-ethereum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955"
+                          >https://medium.com/matter-labs/evaluating-ethereum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://medium.com/celer-network/adding-hybrid-pos-rollup-sidechain-to-celers-coherent-layer-2-platform-d1d3067fe593"
+                          >https://medium.com/celer-network/adding-hybrid-pos-rollup-sidechain-to-celers-coherent-layer-2-platform-d1d3067fe593</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://translate.google.com/website?sl=auto&amp;tl=zh-CN&amp;hl=zh-CN&amp;client=webapp&amp;u=https://ethworks.io/assets/download/zero-knowledge-blockchain-scaling-ethworks.pdf"
+                          >https://ethworks.io/assets/download/zero-knowledge-blockchain-scaling-ethworks.pdf</a
+                        >
+                      </li>
+                    </ol>
+                    <p>
+                      Thanks to John Wolpert, Ken Fromm, and Jack Leahy for
+                      their input on this article.
+                      <blockquote class="bg-white text-xs">
+                        感谢 John Wolpert、Ken Fromm 和 Jack Leahy 对本文的贡献。
+                      </blockquote>
+                    </p>
+                  </div>
+                  <div class="fusion-clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

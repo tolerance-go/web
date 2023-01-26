@@ -12,6 +12,8 @@ Some knowledge points and small applications of web3
 - [vyper](https://github.com/vyperlang/vyper) 是面向 EVM 的 Python 版智能合约语言
 - ethers.js 库旨在成为一个完整而紧凑的库，用于与以太区块链及其生态系统进行交互。它最初是为与 ethers.io 一起使用而设计的，后来扩展为一个更通用的库。
   - 它的官网文档地址是[这里](https://docs.ethers.org/v5/)，中文文档地址是[这里](https://learnblockchain.cn/ethers_v5/)
+- ZK，有效性证明，也称为零知识证明，是一种交易验证方法，发生在证明者（为某些信息创建证明的人）和验证者之间，验证者在不共享任何信息的情况下验证证明他们俩。
+- Sidechains 侧链是与父区块链（也称为主网）相邻工作的独立链。他们有一个核心任务——解决目前阻碍区块链成为主流技术的可扩展性难题。
 
 ### solidity
 
@@ -28,7 +30,6 @@ Some knowledge points and small applications of web3
 ## chart
 
 - DAG（Directed Acyclic Graph）是有向无环图
-
 
 ---
 
