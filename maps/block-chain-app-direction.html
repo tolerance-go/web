@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>block-chain-app-direction</title>
+  </head>
+  <body>
+    <pre class="mermaid">
+      mindmap
+      root((区块链应用方向))
+        公正防伪
+        智能合约
+        物联网
+        链圈子
+        身份验证
+        预测市场
+        资产交易
+        电子商务
+        社交通讯
+        文件存储
+        数据 API
+        银行结算
+        区块链金融
+        操作系统
+    </pre>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
+      import mindmap from "https://cdn.jsdelivr.net/npm/@mermaid-js/mermaid-mindmap@9/dist/mermaid-mindmap.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+      await mermaid.registerExternalDiagrams([mindmap]);
+    </script>
+  </body>
+</html>

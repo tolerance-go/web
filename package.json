@@ -2,8 +2,13 @@
   "name": "skpeqa",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "serve": "serve ."
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
 }

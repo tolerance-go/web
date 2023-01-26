@@ -1,0 +1,21 @@
+# ide
+.vscode
+
+# dependencies
+node_modules
+
+# turbo
+.turbo
+
+# turbo - build ouputs
+dist*
+lib
+es
+build
+test-build
+.next
+coverage
+
+# env
+.env
+

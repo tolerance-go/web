@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>block-chain-app-direction</title>
+  </head>
+  <body>
+    <h2>触发fallback() 还是 receive()?</h2>
+    <pre class="mermaid">
+      flowchart TB
+        A["接受 ETH"] -->C{msg.data是空}
+        C -->|是| D["receive()存在?"]
+        C -->|否| fallback
+        D -->|是| receive
+        D -->|否| fallback
+    </pre>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>
