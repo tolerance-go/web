@@ -50,7 +50,6 @@ Some knowledge points and small applications of web3
 - EVM 是以太坊虚拟机
 - Solidity 中的事件（event）是 EVM 上日志的抽象
 - Solidity 是以太坊虚拟机（EVM）智能合约的语言
-
 - OppenZepplin 是一个维护 solidity 标准化代码库的组织
   - 他的 Ownable 标准实现如下：
     https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
