@@ -1,0 +1,2 @@
+- https://github.com/ethereumbook/ethereumbook
+- https://github.com/inoutcode/ethereum_book
