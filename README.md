@@ -8,6 +8,8 @@ Some knowledge points and small applications of web3
 
 ## web3
 
+- [以太坊词汇表](https://ethereum.org/zh/glossary/)
+- [以太坊开发者文档](https://ethereum.org/zh/developers/)
 - https://wtf.academy 是一个面向 Web2 开发者的 Web3 开源学院
 - [vyper](https://github.com/vyperlang/vyper) 是面向 EVM 的 Python 版智能合约语言
 - ethers.js 库旨在成为一个完整而紧凑的库，用于与以太区块链及其生态系统进行交互。它最初是为与 ethers.io 一起使用而设计的，后来扩展为一个更通用的库。
@@ -54,7 +56,16 @@ Some knowledge points and small applications of web3
   - 他的 Ownable 标准实现如下：
     https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
-## chart
+### big news
+
+- 2022-9-15，以太坊经历了合并升级，从工作量证明过渡到权益证明。
+  - 合并是以太坊规模最大的一次升级，将保护以太坊安全所需的能源消耗减少了 99.95%，同时创建一个更安全、碳成本更低的以太坊网络。以太坊现在成为一种低碳区块链，并且安全性和可扩展性得到增强。
+
+## news channels
+
+- [每周以太坊新闻](https://weekinethereumnews.com/)
+
+## other
 
 - DAG（Directed Acyclic Graph）是有向无环图
 
