@@ -82,9 +82,7 @@ Some knowledge points, examples and resources about the web
 
 ## Three.js
 
-## javaScript libs
-
-### fake data
+## Mock Data
 
 - [mockjs](https://github.com/nuysoft/Mock) - A simulation data generator
 
