@@ -27,6 +27,10 @@ Some knowledge points, examples and resources about the web
 - [figma](https://www.figma.com/) - Build better products as a team. Design, prototype, and gather feedback all in one place with Figma.
 - [framer](https://www.framer.com/) - Go from design to world-class site with Framer, the web builder for creative pros.
 
+## Tailwind Plugins
+
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes based on our recommended class order.
+
 ## Web3
 
 - [以太坊词汇表](https://ethereum.org/zh/glossary/)
