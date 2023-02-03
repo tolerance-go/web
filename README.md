@@ -1,10 +1,16 @@
-# web3
+# web
 
-Some knowledge points and small applications of web3
+Some knowledge points, examples and resources about the web 
 
-关于 web3 的一些知识点和小应用
+关于 web 的一些知识点，示例和资源
 
 ---
+
+## Design Tools
+
+- [spline](https://spline.design/) - a place to design and collaborate in 3D.
+- [figma](https://www.figma.com/) - Build better products as a team. Design, prototype, and gather feedback all in one place with Figma.
+- [framer](https://www.framer.com/) - Go from design to world-class site with Framer, the web builder for creative pros.
 
 ## web3
 
