@@ -61,6 +61,16 @@ Some knowledge points and small applications of web3
 - 2022-9-15，以太坊经历了合并升级，从工作量证明过渡到权益证明。
   - 合并是以太坊规模最大的一次升级，将保护以太坊安全所需的能源消耗减少了 99.95%，同时创建一个更安全、碳成本更低的以太坊网络。以太坊现在成为一种低碳区块链，并且安全性和可扩展性得到增强。
 
+## TensorFlow.js
+
+## Three.js
+
+## javaScript libs
+
+### fake data
+
+- [mockjs](https://github.com/nuysoft/Mock) - A simulation data generator
+
 ## news channels
 
 - [每周以太坊新闻](https://weekinethereumnews.com/)
