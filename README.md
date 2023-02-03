@@ -9,6 +9,8 @@ Some knowledge points, examples and resources about the web
 ## State Manager
 
 - [zustand](https://github.com/pmndrs/zustand) - 🐻 Bear necessities for state management in React
+- [immer](https://github.com/immerjs/immer) - Create the next immutable state by mutating the current one
+- [use-immer](https://github.com/immerjs/use-immer) - Use immer to drive state with a React hooks
 
 ## Design Tools
 
