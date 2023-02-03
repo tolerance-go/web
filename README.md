@@ -6,6 +6,10 @@ Some knowledge points, examples and resources about the web
 
 ---
 
+## State Manager
+
+- [zustand](https://github.com/pmndrs/zustand) - 🐻 Bear necessities for state management in React
+
 ## Design Tools
 
 - [spline](https://spline.design/) - a place to design and collaborate in 3D.
