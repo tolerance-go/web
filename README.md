@@ -10,7 +10,7 @@ Some knowledge points, examples and resources about the web
 
 - [nextjs-13-react-cookies](https://github.com/tolerance-go/web/tree/main/examples/nextjs-13-react-cookies)
 
-## Time Manager
+## Date-Time Libs
 
 - [dayjs](https://github.com/iamkun/dayjs) - ⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API
 
