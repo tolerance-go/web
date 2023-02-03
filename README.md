@@ -1,10 +1,14 @@
 # web
 
-Some knowledge points, examples and resources about the web 
+Some knowledge points, examples and resources about the web
 
 关于 web 的一些知识点，示例和资源
 
 ---
+
+## Examples
+
+- [nextjs-13-react-cookies](https://github.com/tolerance-go/web/tree/main/examples/nextjs-13-react-cookies)
 
 ## State Manager
 
@@ -19,7 +23,7 @@ Some knowledge points, examples and resources about the web
 - [figma](https://www.figma.com/) - Build better products as a team. Design, prototype, and gather feedback all in one place with Figma.
 - [framer](https://www.framer.com/) - Go from design to world-class site with Framer, the web builder for creative pros.
 
-## web3
+## Web3
 
 - [以太坊词汇表](https://ethereum.org/zh/glossary/)
 - [以太坊开发者文档](https://ethereum.org/zh/developers/)
@@ -57,7 +61,7 @@ Some knowledge points, examples and resources about the web
 - Solidity 编写智能合约的编程语言。
 - Solana 解决可扩展性、交易速度、价格和能源效率等主要问题的区块链。
 
-### solidity
+### Solidity
 
 - ABI 是 Application Binary Interface 的简称
 - Gas 是指在以太坊网络上执行特定操作所需的计算工作量
@@ -69,7 +73,7 @@ Some knowledge points, examples and resources about the web
   - 他的 Ownable 标准实现如下：
     https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
-### big news
+### Big News
 
 - 2022-9-15，以太坊经历了合并升级，从工作量证明过渡到权益证明。
   - 合并是以太坊规模最大的一次升级，将保护以太坊安全所需的能源消耗减少了 99.95%，同时创建一个更安全、碳成本更低的以太坊网络。以太坊现在成为一种低碳区块链，并且安全性和可扩展性得到增强。
@@ -84,15 +88,15 @@ Some knowledge points, examples and resources about the web
 
 - [mockjs](https://github.com/nuysoft/Mock) - A simulation data generator
 
-## news channels
+## News Channels
 
 - [每周以太坊新闻](https://weekinethereumnews.com/)
 
-## other
+## Conceptual Noun
 
 - DAG（Directed Acyclic Graph）是有向无环图
 
-## articles
+## Articles
 
 - [How Ethereum Layer 2 scaling solutions address barriers to enterprises building on Mainnet 以太坊第 2 层扩展解决方案如何解决企业在主网上构建的障碍](https://tolerance-go.github.io/web3/articles/how-ethereum-layer-2-scaling-solutions-address-barriers-to-enterprises-building-on-mainnet)
 
