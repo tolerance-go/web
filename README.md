@@ -14,6 +14,10 @@ Some knowledge points, examples and resources about the web
 
 - [dayjs](https://github.com/iamkun/dayjs) - ⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API
 
+## UI Library
+
+- [nextui](https://github.com/nextui-org/nextui) - [site](https://nextui.org/) - 🚀 Beautiful, fast and modern React UI library.
+
 ## State Manager
 
 - [zustand](https://github.com/pmndrs/zustand) - 🐻 Bear necessities for state management in React
@@ -26,8 +30,9 @@ Some knowledge points, examples and resources about the web
 - [spline](https://spline.design/) - a place to design and collaborate in 3D.
 - [figma](https://www.figma.com/) - Build better products as a team. Design, prototype, and gather feedback all in one place with Figma.
 - [framer](https://www.framer.com/) - Go from design to world-class site with Framer, the web builder for creative pros.
+- [retool](https://retool.com/) - Build internal tools, remarkably fast
 
-## Tailwind Plugins
+## Prettier Plugins
 
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes based on our recommended class order.
 
