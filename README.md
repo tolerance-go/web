@@ -40,14 +40,11 @@ Some knowledge points, examples and resources about the web
 
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes based on our recommended class order.
 
-## E-Book
-
-- [lihang-code](https://github.com/fengdu78/lihang-code) - 《统计学习方法》的代码实现
-
 ## AI
 
 - [futurepedia](https://www.futurepedia.io/) - The Largest AI Tools Directory
 - [gpt3demo](https://gpt3demo.com/) - GPT-3 is the world's most sophisticated natural language technology. Discover how companies are implementing the AI to power new use cases.
+- [lihang-code](https://github.com/fengdu78/lihang-code) - 《统计学习方法》的代码实现
 
 ## Web3
 
