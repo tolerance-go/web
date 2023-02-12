@@ -10,6 +10,14 @@ Some knowledge points, examples and resources about the web
 
 - [nextjs-13-react-cookies](https://github.com/tolerance-go/web/tree/main/examples/nextjs-13-react-cookies)
 
+## Date-Time Libs
+
+- [dayjs](https://github.com/iamkun/dayjs) - ⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API
+
+## UI Library
+
+- [nextui](https://github.com/nextui-org/nextui) - [site](https://nextui.org/) - 🚀 Beautiful, fast and modern React UI library.
+
 ## State Manager
 
 - [zustand](https://github.com/pmndrs/zustand) - 🐻 Bear necessities for state management in React
@@ -17,11 +25,26 @@ Some knowledge points, examples and resources about the web
 - [use-immer](https://github.com/immerjs/use-immer) - Use immer to drive state with a React hooks
 - [react-cookie](https://github.com/reactivestack/cookies) - Load and save cookies within your React application
 
+## Motion
+
+- [motion-canvas](https://github.com/motion-canvas/motion-canvas) - Web-based tool for creating animations programmatically
+
 ## Design Tools
 
 - [spline](https://spline.design/) - a place to design and collaborate in 3D.
 - [figma](https://www.figma.com/) - Build better products as a team. Design, prototype, and gather feedback all in one place with Figma.
 - [framer](https://www.framer.com/) - Go from design to world-class site with Framer, the web builder for creative pros.
+- [retool](https://retool.com/) - Build internal tools, remarkably fast
+
+## Prettier Plugins
+
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes based on our recommended class order.
+
+## AI
+
+- [futurepedia](https://www.futurepedia.io/) - The Largest AI Tools Directory
+- [gpt3demo](https://gpt3demo.com/) - GPT-3 is the world's most sophisticated natural language technology. Discover how companies are implementing the AI to power new use cases.
+- [lihang-code](https://github.com/fengdu78/lihang-code) - 《统计学习方法》的代码实现
 
 ## Web3
 
@@ -40,7 +63,7 @@ Some knowledge points, examples and resources about the web
   - 以太坊立足比特币创新之上，两者都允许你使用数字货币，而无需支付服务提供商或银行。但是以太坊是可编程的，所以你还可以在以太坊网络上构建和部署去中心化应用程序。
 - 稳定币是一种新型加密货币，依赖于更稳定的资产作为其价值基础。大多数稳定币都与美元挂钩，因而维持其货币价值。这样一个非常便宜且稳定的全球支付系统应运而生。当前许多稳定币都构建在以太坊网络上。
 
-## DApp
+### DApp
 
 - Metaverse 是一个 3D 的虚拟网络世界，你可以和其它数字化的对象互动。
 - Blockchain 分布式数据库，数据被分成用密码学链接的 块。当新数据被推入区块链时，它会填充一个空块，该块进一步链接到其他块，创建一个按时间顺序排列的链。区块链中的数据不可逆操作，能永久保存，任何人都可以查看。
